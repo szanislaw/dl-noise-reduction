@@ -1,0 +1,11 @@
+torch
+torchaudio
+librosa
+numpy
+soundfile
+scipy
+webrtcvad
+tqdm
+asteroid
+gradio
+matplotlib
