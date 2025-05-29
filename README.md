@@ -95,14 +95,6 @@ python noise-reduction-script.py
 
 ---
 
-## 🧑‍🔧 Author
-
-Shawn Yap Zheng Yi  
-Under the supervision of Rachel LW Tan  
-xData, Home Team Science and Technology Agency (HTX)
-
----
-
 ## 🎛️ Gradio Audio Preview Interface
 
 A visual and interactive tool to compare raw vs enhanced audio using waveform and mel-spectrogram visualizations.
@@ -143,4 +135,10 @@ This will launch a local Gradio interface where users can:
 - Uses `matplotlib`, `librosa`, and `gradio`.
 
 ---
+
+## 🧑‍🔧 Author
+
+Shawn Yap Zheng Yi  
+Under the supervision of Rachel LW Tan  
+xData, Home Team Science and Technology Agency (HTX)
 
