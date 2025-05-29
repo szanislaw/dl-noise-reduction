@@ -100,3 +100,47 @@ python noise-reduction-script.py
 Shawn Yap Zheng Yi  
 Under the supervision of Rachel LW Tan  
 xData, Home Team Science and Technology Agency (HTX)
+
+---
+
+## 🎛️ Gradio Audio Preview Interface
+
+A visual and interactive tool to compare raw vs enhanced audio using waveform and mel-spectrogram visualizations.
+
+### Features
+
+- Dropdown to select `.wav` file from the original audio folder
+- Playback for both original and enhanced audio
+- Displays:
+  - Waveform and mel-spectrogram (log-scaled in dB)
+  - Corresponding ground-truth transcript (if available)
+
+### Usage
+
+```bash
+python gradio-preview.py
+```
+
+This will launch a local Gradio interface where users can:
+1. Select a `.wav` file from the dropdown.
+2. View waveform and mel-spectrogram comparisons.
+3. Listen to the original and enhanced versions.
+4. Read any corresponding transcript under `groundtruth/`.
+
+### Folder Expectations
+
+```
+.
+├── airline-radio-comms/                # Folder containing original audio
+├── airline-radio-comms-asteroid-vad-enhanced/  # Folder containing enhanced audio
+└── groundtruth/                        # Folder with reference transcripts (.txt)
+```
+
+### Notes
+
+- Spectrograms are computed with 128 mel bands and normalized in log-dB.
+- Colorbars and x-axis alignment ensure consistent comparison between views.
+- Uses `matplotlib`, `librosa`, and `gradio`.
+
+---
+
